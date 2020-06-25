@@ -1,0 +1,17 @@
+Legal status
+
+Minecraft Python Edition is an open-source recreation of Minecraft written in Python.
+I don't consider this game as a Minecraft knockoff, I consider it a recreation of Minecraft for the open source community.
+
+I have seen thousands of recreations of the Minecraft game, along with distribution, both free, and paid, and neither Mojang nor Microsoft did anything about any of them, so I am assuming it is safe to do this.
+If Mojang/Microsoft wants to take down this clone, they are going to have to take down all clones created before this first. I don't think they would do that. If they did, they would receive heavy backlash
+
+I do not plan on selling this game, or including in-app purchases. I want it to remain purely free software. I love the original Minecraft game, but one of my biggest problems with it is it being closed source.
+This open-source recreation of Minecraft is made for everyone. It includes compatiblity with all Minecraft games.
+The final name is likely not going to have Minecraft in the title. The beta versions are not to be confused with Minecraft Pi Edition for the Raspberry Pi architecture
+
+This is free and open source software. You are free to modify, share, and redistribute the software, but it cannot be sold for any amount of money, and it can't be claimed as your creation. You must give credit
+
+Game cost: $0.00...000
+Written in: the Python programming language
+License: Unknown (considering GNU General Public License 3.0)

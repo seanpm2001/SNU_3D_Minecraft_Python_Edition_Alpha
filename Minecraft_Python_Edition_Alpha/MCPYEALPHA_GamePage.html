@@ -1,0 +1,1009 @@
+<!--- start of script !--->
+<!DOCTYPE html>
+<HTML><!-- Master branch !-->
+<BODY><!-- Submaster branch !-->
+<head> <!-- external and internal resources needed for page !-->
+<!-- .ico !--><!-- 021!--<!-- Favicon !--><link rel="icon" href="YourFaviconName.ico" type="image/x-icon"/><!-- The favicon for this page !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .js !--> <!-- 02 !--<!-- JavaScript file 1 !--><!--<script type="text/javascript" src="ExpandAll_ScriptV1.00.js"></script><!-- the script needed to automatically expand all detail tags !--><!-- external resource !-->
+<!-- .js !--><!-- 03 !--><!-- JavaScript file !--><!--<script type="text/javascript" src="Sourcebase_SNUScriptStarter_V1.00.js"></script><!-- The full JavaScript SNU sheet, modify to your liking !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 04 !--<!-- Stylesheet 1 !--><!--<link rel="stylesheet" type="text/css" href="2DStart_Style_StickySideBarVersion1.01.css"> <!-- The stylesheet for the sidebar !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 05 !--<!-- Stylesheet 2 !--><!--<link rel="stylesheet" type="text/css" href="TOP_NAVIGATION_BAR_V1.0.css"> <!-- The stylesheet for the top navigation pane !--><!-- external resource !-->
+<!-- .css !--><!-- 06 !--<!-- Stylesheet 3 !--><!--<link rel="stylesheet" type="text/css" href="Sourcebase_SNUScriptStarter_V1.01.css"> <!-- Make sure to modify this CSS to your liking !--><!-- The stylesheet for the white text !--><!-- external resource !-->
+<!-- Start of Metadata !-->
+<META>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta name="description" content="Welcome to the homepage for Minecraft Python Edition."><!-- Description search engines display when searching the site via search !-->
+	<meta name="keywords" content="MCPYE"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta name="author" content="Sean Patrick Myrick/SeanPM, SeanWallWalla/SNU, SNU.net, SNU">
+</META>
+<!-- End of Metadata !-->
+</head>
+<HEAD>
+<meta><!-- Meta character set section !-->
+	<!-- meta charset="ANSI"> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> <!-- page encoding  !-->
+	<meta charset="UTF-16"> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> <!-- page encoding  !-->
+</meta> <!-- End of meta character set section !-->
+<!-- Stylesheet 1 !--><style type="text/css">
+/* Grid system */
+.grid-container {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+</style>
+<!-- Stylesheet 2 !--><style type="text/css">
+/* Transparent boxes */
+div.background {
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+}
+div.transbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+}
+</style>
+<!-- Stylesheet 3 /!--><style type="text/css">
+/* Sidebar */
+body {
+	margin: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 16%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+</style>
+<!-- Stylesheet 4 !--><style type="text/css">
+/* Topbar */
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+/* Dropdown */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<!-- Stylesheet 5 !--><style type="text/css">
+/* Headings */
+H1 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H2 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H3 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H4 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H5 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H6 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 6 !--><style type="text/css">
+/* Dividers, paragraphs */
+HR {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+p {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 7 !--><style type="text/css">
+/* Other rich text */
+i {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+u {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+b {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+s {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sub {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sup {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 8 !--><style type="text/css">
+/* Details and summary */
+details {
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+summary {
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 9 !--><style type="text/css">
+/* Progress bar 
+/* Option 1 */
+progress {
+	display:inline-block;
+	width:190px;
+	height:20px;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+progress::-webkit-progress-bar {
+	height:11px;
+	width:150px;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+progress::-webkit-progress-value {
+	display:inline-block;
+	float:left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+progress:after {
+	margin:-26px 0 0 -7px;
+	padding:0;
+	display:inline-block;
+}
+/* Option 2 */
+#progress {
+	background: #333;
+	border-radius: 13px;
+	height: 20px;
+	width: 300px;
+	padding: 3px;
+}
+#progress:after {
+	content: '';
+	display: block;
+	background: orange;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
+}
+/* Option 3 */
+#progressbar {
+	background-color: black;
+	border-radius: 13px;
+	/* (height of inner div) / 2 + padding */
+	padding: 3px;
+}
+#progressbar>div {
+	background-color: orange;
+	width: 40%;
+	/* Adjust with JavaScript */
+	height: 20px;
+	border-radius: 10px;
+}
+/* Option 4 */
+/* Step 1 */
+progress, /* All HTML5 progress enabled browsers */
+{
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+/* Step 2 */
+/* IE10 */
+progress {
+	color: black;
+}
+/* Firefox */
+progress::-moz-progress-bar {
+	background: black;
+}
+/* Chrome */
+progress::-webkit-progress-value {
+	background: black;
+}
+/* Step 3 */
+progress[value^="9"]::-moz-progress-bar {
+background-color : red;
+}
+</style>
+<!-- Stylesheet 10 !--><style type="text/css">
+/* rich text section 2 */
+p {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+P {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+b {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+B {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+u {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+U {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+s {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+S {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+i {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+I {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sub {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+SUB {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sup {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+SUP {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 11 !--><style type="text/css">
+/* form section */
+form {
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+FORM {
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+/* specialized button hyperlink section */
+a {
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+A {
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 12 !--><style type="text/css">
+/* WebGL compatibility layer */
+canvas {
+	border: 2px solid black;
+	background-color: black;
+}
+video {
+	display: none;
+}
+/* Gallery */
+div.gallery {
+	border: 1px solid #ccc;
+}
+div.gallery:hover {
+	border: 1px solid #777;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+	.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+	width: 100%;
+	}
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+<!-- Stylesheet 13 !--><style type="text/css">
+/* Border image */
+#borderimg { 
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+}
+</style>
+<!-- Stylesheet 14 !--><style type="text/css">
+/* Scripting tags - syntax highlights for various languages, testing with Python 3 syntax */
+scri-none { /* Scri-none stands for non-identified script syntax. This text should show black if something is not written correctly, such as PRiNT instead of print */
+	font-family: "courier";
+	color: black;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-blue1 {
+	font-family: "courier";
+	color: blue;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-string1 {
+	font-family: "courier";
+	color: silver;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-comment1 {
+	font-family: "courier";
+	color: green;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 15 !--><style type="text/css">
+/* Start of script */
+/* Default phrase tag CSS */
+/* Contains the default CSS for the default 6 HTML5 phrase tags */
+/* Tag list:
+1 | kbd (keyboard input)
+2 | em (emphasized text) (not to be confused with the pixel measurement metric (1em = 16px)
+3 | strong (strong text)
+4 | code (computer code/script)
+5 | var (variable (text))
+6 | samp (sample output)
+*/
+/* Start of tag list */
+/* KBD (Keyboard input) */
+kbd {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+ <kbd>Keyboard input</kbd> 
+---
+*/
+/* EM (Emphasized text) */
+em {
+	font-style: italic;
+}
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* STRONG (ttrong text) */
+strong {
+	font-weight: bold;
+}
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* CODE (Computer code/script) */
+code {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+ <code>A piece of computer code</code> 
+---
+*/
+/* VAR (Variable (text)) */
+var {
+	font-style: italic;
+}
+/* HTML Sample:
+---
+<var>Variable</var>
+---
+*/
+/* SAMP (Sample output) */
+samp {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+<samp>Sample output from a computer program</samp>
+---
+*/
+/* End of tag list */
+/* File version history
+V1: Created January 1st 2020
+*/
+/* File info:
+Size: 01,.366 bytes (01,.366 Kilobytes)
+Line count: 077
+Language: CSS3 (Cascade Style Sheets)
+Line indenting: UNIX(LF)
+Encoding: UTF-8 (With no UTF-8 characters)
+/* End of script */
+</style>
+<!-- Stylesheet 16 !--><style type="text/css">
+blockquote {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+}
+</style>
+<!-- Stylesheet 17 !--><style type="text/css">
+HR.blank {
+	border: 10px solid navy;
+	border-radius: 5px;
+}
+</style>
+<!-- End of stylesheets !-->
+<?php
+// PHP section
+// "Echo"
+echo ("Hello World"); // Output: Hello World
+/* Or
+* "Print"
+*/
+print ("Hello World"); // Output: Hello World
+// Variable list
+$piSimple = "3.14";
+$HelloWorldStr = "Hello World";
+$HelloworldStr = "Hello world";
+$Int2__16 = "65536"; // My #1 memorized power of 2
+$Power2_16 = "65536";
+// End of variable list
+// Var list
+var x = 0; // X Coordinate
+var y = 0; // Y Coordinate
+var z = 0; // Z Coordinate
+var a = 0; // A Coordinate [4D MODE ONLY]
+// End ov Var list
+// Int list
+int testInt1 = "101";
+// End of int list
+// float list
+float decimal1 = "1.01";
+// End of float list
+// End of PHP section
+?>
+<script type="text/JavaScript">
+// Start of script
+// Start of page JavaScript console
+console.log("SNU web console for [browser]");
+console.log("The Minecraft Python Edition gamepage console");
+console.log(">>>");
+// End of page JavaScript console
+// End of script
+</script>
+<!-- Ruby support !-->
+<ruby>
+
+</ruby>
+<!--
+<ruby>
+<rt>
+<rp></rp>
+</rt>
+</ruby>
+!-->
+<!-- XML support !-->
+<xml>
+
+</xml>
+<!-- Divider !-->
+<TITLE>Minecraft Python Edition - Free and Open Source sandbox game inspired heavily by Minecraft</TITLE><!-- Page title (remember to change this) !-->
+</HEAD>
+<!-- End of embedded scripting !-->
+<BODY BGCOLOR="NAVY"> <!-- Background color !-->
+<!-- Brief color list
+Black (000000)
+<BODY BGCOLOR="BLACK">
+White (FFFFFF)
+<BODY BGCOLOR="WHITE">
+Cyan (00FFFF)
+<BODY BGCOLOR="CYAN">
+Navy (000080)
+<BODY BGCOLOR="NAVY">
+Dark grey (333333)
+<BODY BGCOLOR="DARKGRAY">
+Light grey (777777)
+<BODY BGCOLOR="LIGHTGRAY">
+Red (FF0000)
+<BODY BGCOLOR="RED">
+Green (00FF00)
+<BODY BGCOLOR="GREEN">
+Turquiose (40E0D0)
+<BODY BGCOLOR="TURQUIOSE">
+Silver (######)
+<BODY BGCOLOR="SILVER">
+!-->
+<BODY BACKGROUND=".png"><!-- Background image !--> <!-- Allowed formats: .png .jpg .jpe .jif .gif .bmp .dib .tif .tiff !-->
+<!-- Top navigation bar !-->
+<div class="topnav">
+<a class="active" href="">[SNU StoryBubble]</a><!-- Try to make the name stretch over the entire sidebar to near perfection !-->
+<a href="#PLACEHOLDER">(</a>
+<a href="about:blank">❎ Exit SNU</a><!-- empty link !--><!-- This button always exits the current SNU tab. This should be a built-in page on every browser (guaranteed to work on Chromium/Google Chrome and Mozilla Firefox !-->
+<a href="../!SNU2DSTART.html">⛺ <!-- Home page of mode !-->Home</a>
+<a href="#PLACEHOLDER">)</a>
+<i><a href="SNU_StoryBubble_Home.html">SNUs revival of the short video era</a></i>
+<!-- Make sure it stays on a single line for all displays (until I can get a scrollbar in) try testing on displays with 1336 pixel width like I am !-->
+</div>
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<ul>
+<!-- <HR> !-->
+<!-- Page title section can go here as well if desired !-->
+<!-- <HR> !-->
+<img src="SampleIcon1.png" alt="Logo_Profile_Icon" width="225" height="225">
+<HR>
+<li><a class="active" href="#home">[SNU StoryBubble Home]</a></li>
+<HR>
+<details>
+	<summary><li><a href="#EXPLORE">[SNU StoryBubble Home Index]</a></li></summary>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Section 1 title</a></li></summary>
+	<li><a href=".html">Link 1</a></li>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Section 2 title</a></li></summary>
+	<li><a href=".html">Link 1</a></li>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Section 3 title</a></li></summary>
+	<li><a href=".html">Link 1</a></li>
+	</details>
+	<li><HR></li>
+	<nav>
+	<li>* Section 1</li>
+	<li>* Section 2</li>
+	<li>* Section 3</li>
+	</nav>
+	<HR>
+	<li>Copyleft SeanWallaWalla (2015-2020)</li>
+	<li>SNU 2018-2020</li>
+	<HR>
+</ul>
+<!-- End of sidebar and topbar section !-->
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<!-- Page content starts here !-->
+<HR>
+<!-- File info (default)
+Line indent style: Unix (LF)
+Languages: HTML5, HTML4, CSS3, JS1.8, RUBY2.6, PHP 7.3
+Derived from: Sourcebase_SNUScriptStarter (version 1.07)
+!-->
+<header>
+<H1 id="Top">Welcome to the Minecraft Python Edition Alpha game page<a href="#Top">¶</a></H1>
+<p>This page is derived from SourceBase and may contain some template elements. Make sure to point them out when found and use the latest version of the page.</p>
+</header>
+<HR>
+<section>
+<p><a href="../">View repository</a></p>
+</section>
+<HR>
+<section>
+<H1>Future game plans</H1>
+<p>* Support for Roblox, Sims 1, Sims 2, Sims 3, Sims 4</p>
+<p>* Sim mode: different garbled languages depending on language.</p>
+</section>
+<HR>
+<section>
+<p>The name is not yet official, and is subject to change.</p>
+</section>
+<HR>
+<!-- snapshot section V2 !-->
+<section>
+<details><summary><H2 id="SnapshotSection">View older versions of this page<a href="#SnapshotSection">¶</a></H2></summary>
+<H3>Snapshots 1 to 10</H3>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot1.html">Snapshot 1 (January 31st 2020)</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot2.html">Snapshot 2</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot3.html">Snapshot 3</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot4.html">Snapshot 4</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot5.html">Snapshot 5</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot6.html">Snapshot 6</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot7.html">Snapshot 7</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot8.html">Snapshot 8</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot9.html">Snapshot 9</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot10.html">Snapshot 10</a></button></H4>
+<H3>Snapshots 11 to 20</H3>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot11.html">Snapshot 11</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot12.html">Snapshot 12</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot13.html">Snapshot 13</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot14.html">Snapshot 14</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot15.html">Snapshot 15</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot16.html">Snapshot 16</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot17.html">Snapshot 17</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot18.html">Snapshot 18</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot19.html">Snapshot 19</a></button></H4>
+<H4><button><a href="MCPYEALPHA_GamePage_Snapshot20.html">Snapshot 20</a></button></H4>
+</details>
+</section>
+<HR>
+<header>
+<!-- Bottom of page !-->
+<H1>You have reached the bottom of this page.</H1>
+</header>
+<HR>
+<footer>
+<!--<p>Footer content here</p>!-->
+<p>Footer not yet set up</p>
+<!-- Footer can be pinned or unpinned, pinned footer scripting is unavailable right now !-->
+</footer>
+<!-- "Blank" test !-->
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<section>
+<p>Middle of blank line test</p>
+</section>
+<HR>
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<!-- End of "Blank test !-->
+<!-- Bottom script (filler) !-->
+</BODY>
+<!-- </BODY> !-->
+<!-- This page was built off the basis of SNU Sourcebase HTML scriptstarter 1.10 - January 29th 2020 build !-->
+</HTML>
+<!-- Bottom script (filler) !-->
+<!--- end of script !--->
